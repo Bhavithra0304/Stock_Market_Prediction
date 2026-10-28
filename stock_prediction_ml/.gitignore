@@ -1,0 +1,22 @@
+# ML Model & Training gitignore
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environments
+.venv/
+venv/
+
+# Backup & temporary models
+*.orig.bak
+*.bak
+*.tmp
+checkpoints/
+*.ckpt
+.ipynb_checkpoints/
+wandb/
+.keras/
+
+# Generated evaluation plots
+outputs/*.png

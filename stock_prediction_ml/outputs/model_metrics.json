@@ -1,0 +1,20 @@
+{
+  "ticker": "RELIANCE.NS",
+  "forecast_horizon_trading_days": 5,
+  "evaluation_method": "All models evaluated on the same chronological 5-day forecast origins.",
+  "evaluation_origins": 49,
+  "note": "Historical backtest only; results do not guarantee future performance.",
+  "XGBoost": {
+    "MAE": 29.20801544189453,
+    "RMSE": 37.59601477747924
+  },
+  "LSTM": {
+    "MAE": 41.33964920043945,
+    "RMSE": 48.893705959171015
+  },
+  "TimesFM": {
+    "MAE": 21.834543228149414,
+    "RMSE": 28.78198479823414
+  },
+  "TimesFM_error": null
+}
