@@ -1,0 +1,108 @@
+# ==============================================================================
+# StockStreak Unified .gitignore
+# Covers Frontend (Vite/React), Backend (FastAPI), and ML (Python/TimesFM/PyTorch)
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Operating System & IDE Files
+# ------------------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+[Dd]esktop.ini
+
+# Editors & IDEs
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.sublime-project
+*.sublime-workspace
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*~
+
+# Temporary & Backup files
+*.bak
+*.orig
+*.orig.bak
+*.tmp
+*.temp
+
+# ------------------------------------------------------------------------------
+# 2. Python, Backend & Machine Learning
+# ------------------------------------------------------------------------------
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Environment and Secret files
+.env
+.env.*
+!.env.example
+backend/.env
+
+# SQLite databases & logs
+*.db
+*.sqlite
+*.sqlite3
+backend/stockstreak.db
+*.log
+logs/
+
+# Testing & Type checking
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+nosetests.xml
+coverage.xml
+
+# ML Training Checkpoints, Caches & Temporary Artifacts
+.ipynb_checkpoints/
+wandb/
+checkpoints/
+*.ckpt
+.keras/
+outputs/*.png
+
+# ------------------------------------------------------------------------------
+# 3. Frontend (React / Vite / Node.js)
+# ------------------------------------------------------------------------------
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+dist-ssr/
+frontend/dist-ssr/
+
+# Package manager logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Local environment overrides
+*.local
+frontend/.env.local
+frontend/.env.*.local
